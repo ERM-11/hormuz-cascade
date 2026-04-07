@@ -1,0 +1,254 @@
+{
+  "generated_at": "2026-04-07T13:41:08.015154",
+  "scenario_weights": {
+    "A_FAST": 0.1,
+    "B_SLOW_GRIND": 0.4,
+    "C_PROLONGED": 0.4,
+    "D_CATASTROPHIC": 0.1
+  },
+  "scenarios": {
+    "A_FAST": {
+      "name": "Fast Resolution",
+      "oil_target": 75,
+      "duration_days": 30,
+      "probability": 0.1
+    },
+    "B_SLOW_GRIND": {
+      "name": "Slow Grind",
+      "oil_target": 100,
+      "duration_days": 150,
+      "probability": 0.4
+    },
+    "C_PROLONGED": {
+      "name": "Prolonged / Structural",
+      "oil_target": 130,
+      "duration_days": 300,
+      "probability": 0.4
+    },
+    "D_CATASTROPHIC": {
+      "name": "Catastrophic Escalation",
+      "oil_target": 180,
+      "duration_days": 700,
+      "probability": 0.1
+    }
+  },
+  "wave_signals": [
+    {
+      "date": "2026-04-06",
+      "wave_id": "W0_MACRO",
+      "commodity_return_20d": 0.108607,
+      "equity_return_20d": -0.006696,
+      "correlation_20d": -0.1329,
+      "correlation_zscore": 1.2959,
+      "divergence_flag": 0,
+      "signal_strength": 0.264725
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W1_ENERGY",
+      "commodity_return_20d": 0.101067,
+      "equity_return_20d": 0.06414,
+      "correlation_20d": 0.337,
+      "correlation_zscore": 1.0128,
+      "divergence_flag": 0,
+      "signal_strength": 0.074325
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W2_FERTILISER",
+      "commodity_return_20d": -0.117702,
+      "equity_return_20d": 0.049855,
+      "correlation_20d": 0.5286,
+      "correlation_zscore": 1.3439,
+      "divergence_flag": 0,
+      "signal_strength": -0.392737
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W3_AGRICULTURE",
+      "commodity_return_20d": -0.008639,
+      "equity_return_20d": 0.017595,
+      "correlation_20d": 0.3622,
+      "correlation_zscore": 0.0865,
+      "divergence_flag": 0,
+      "signal_strength": -0.028503
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W4_PETROCHEMICALS",
+      "commodity_return_20d": 0.236634,
+      "equity_return_20d": 0.108882,
+      "correlation_20d": 0.4337,
+      "correlation_zscore": 1.9395,
+      "divergence_flag": 0,
+      "signal_strength": 0.375528
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W5_HELIUM_SEMIS",
+      "commodity_return_20d": 0.210452,
+      "equity_return_20d": 0.085704,
+      "correlation_20d": -0.3279,
+      "correlation_zscore": -0.3161,
+      "divergence_flag": 0,
+      "signal_strength": 0.164183
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W6_EV_BATTERY",
+      "commodity_return_20d": 0.236634,
+      "equity_return_20d": 0.006103,
+      "correlation_20d": -0.4298,
+      "correlation_zscore": -1.204,
+      "divergence_flag": 0,
+      "signal_strength": 0.508081
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W7_TRANSPORT",
+      "commodity_return_20d": 0.210452,
+      "equity_return_20d": 0.041163,
+      "correlation_20d": -0.2951,
+      "correlation_zscore": -0.2294,
+      "divergence_flag": 0,
+      "signal_strength": 0.208122
+    },
+    {
+      "date": "2026-04-06",
+      "wave_id": "W8_SAFE_HAVEN",
+      "commodity_return_20d": -0.114085,
+      "equity_return_20d": -0.040495,
+      "correlation_20d": 0.8107,
+      "correlation_zscore": 0.0214,
+      "divergence_flag": 0,
+      "signal_strength": -0.075168
+    }
+  ],
+  "portfolio_tilts": [
+    {
+      "wave_id": "W2_FERTILISER",
+      "wave_name": "Fertiliser & Ag Inputs",
+      "score": 4.3854,
+      "expected_payoff": 0.89,
+      "primary_direction": "long",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 89%; Equities lagging commodity signal",
+      "top_tickers": [
+        "CF",
+        "NTR",
+        "IPI"
+      ]
+    },
+    {
+      "wave_id": "W4_PETROCHEMICALS",
+      "wave_name": "Petrochemicals & Plastics",
+      "score": 3.9944,
+      "expected_payoff": 0.84,
+      "primary_direction": "long",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 84%; Equities lagging commodity signal",
+      "top_tickers": [
+        "WLK",
+        "LYB",
+        "MEOH"
+      ]
+    },
+    {
+      "wave_id": "W6_EV_BATTERY",
+      "wave_name": "EV Battery Supply Chain",
+      "score": 3.5269,
+      "expected_payoff": 0.58,
+      "primary_direction": "short",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 58%; Equities lagging commodity signal",
+      "top_tickers": [
+        "TSLA"
+      ]
+    },
+    {
+      "wave_id": "W0_MACRO",
+      "wave_name": "Macro Regime Shift",
+      "score": 2.8813,
+      "expected_payoff": 0.79,
+      "primary_direction": "long",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 79%; Equities lagging commodity signal",
+      "top_tickers": [
+        "TIP",
+        "UUP",
+        "GC=F"
+      ]
+    },
+    {
+      "wave_id": "W7_TRANSPORT",
+      "wave_name": "Airlines & Shipping",
+      "score": 2.3417,
+      "expected_payoff": 0.76,
+      "primary_direction": "short",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 76%; Equities lagging commodity signal",
+      "top_tickers": [
+        "JETS",
+        "DAL",
+        "AAL"
+      ]
+    },
+    {
+      "wave_id": "W5_HELIUM_SEMIS",
+      "wave_name": "Helium \u2192 Semiconductors & Healthcare",
+      "score": 1.77,
+      "expected_payoff": 0.67,
+      "primary_direction": "short",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 67%; Equities lagging commodity signal",
+      "top_tickers": [
+        "SOXX",
+        "LRCX",
+        "AMAT"
+      ]
+    },
+    {
+      "wave_id": "W1_ENERGY",
+      "wave_name": "Energy Direct",
+      "score": 1.3249,
+      "expected_payoff": 0.76,
+      "primary_direction": "long",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 76%; Equities lagging commodity signal",
+      "top_tickers": [
+        "DVN",
+        "FANG",
+        "VLO"
+      ]
+    },
+    {
+      "wave_id": "W8_SAFE_HAVEN",
+      "wave_name": "Safe Haven & Currency",
+      "score": 1.3138,
+      "expected_payoff": 0.75,
+      "primary_direction": "long",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 75%; Equities lagging commodity signal",
+      "top_tickers": [
+        "GLD",
+        "GDX",
+        "UUP"
+      ]
+    },
+    {
+      "wave_id": "W3_AGRICULTURE",
+      "wave_name": "Food & Agriculture",
+      "score": 1.1822,
+      "expected_payoff": 0.92,
+      "primary_direction": "long",
+      "divergence": false,
+      "rationale": "Scenario-weighted payoff: 92%; Equities lagging commodity signal",
+      "top_tickers": [
+        "DBA",
+        "CORN",
+        "WEAT"
+      ]
+    }
+  ],
+  "expected_oil_price": 117.5
+}
